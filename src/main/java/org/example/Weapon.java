@@ -1,24 +1,23 @@
 package org.example;
 
 public enum Weapon {
-    SWORD(50, 1.2),
-    AXE(60, 0.9),
-    BOW(30, 1.5),
-    SPEAR(40, 1.0);
+    //Enumın değerlerini yazdığımızda enum' ı çağırıyoruz. new keyword u ile yeni nesne oluşturmaya benziyor.
+    SWORD(20,4),
+    AXE(30,2.3),
+    MACE(40, 1.1);
 
-    private final int damage;
-    private final double attackSpeed;
+    private int damage;
+    private double attackSpeed;
 
-    Weapon(int damage,double attackSpeed) {
+    Weapon(int damage, double attackSpeed){
         this.damage = damage;
         this.attackSpeed = attackSpeed;
     }
 
-    public int getDamage() {
-        return damage;
+    public  int getDamage(){
+        return this.damage;
     }
-
-    public double getAttackSpeed() {
-        return attackSpeed;
+    public  double getAttackSpeed(){
+        return  this.attackSpeed;
     }
 }
